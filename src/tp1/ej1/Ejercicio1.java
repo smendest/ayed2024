@@ -1,4 +1,4 @@
-package bin.tp1.ej1;
+package tp1.ej1;
 
 public class Ejercicio1 {
   /* Declaración del **estad** del objeto */
