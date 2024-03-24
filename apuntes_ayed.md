@@ -49,6 +49,32 @@ public class Ejercicio1 {
 
 ```
 
+## Arrays
+Declaración e inicialización.
+
+### Varios pasos
+
+```java
+int[] intArray;     // sólo declara
+intArray = new int[5];    //crea el declarado arriba
+double montos[]=new double[12];     //declara y crea
+String[] items=new String[4];     //declara y crea
+```
+Inicialización elemento por elemento:
+```java
+for (int i=0;i<4;i++){
+  items[i] = "item"+i;
+}
+```
+### Un paso
+
+```java
+int[] intArray = {6, 3, 2, 4, 9};
+Cliente[] cliArray = {new Cliente(), new Cliente(), new Cliente()};
+String[] items = { "item1", "item2", "item3", "item4"};
+```
+
+
 ## Sintaxis de clases
 
 ## Programa principal
@@ -95,10 +121,16 @@ public TipoRetorno nombreMetodo (lista de params formales) {
 
 ## Funcionalidades
 
-## Mostrar en pantalla, log, print
+### Mostrar en pantalla (println)
 Ejemplo:
 ```java
   System.out.println("imprimir");
   System.out.println("a"+ a);
 
+```
+
+### Bucle for
+```java
+for (int i=1; i<=10; i++){
+}
 ```
