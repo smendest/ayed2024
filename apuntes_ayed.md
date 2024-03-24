@@ -1,7 +1,7 @@
 # Apuntes de Algoritmos y Estructuras de Datos
 Escribir aquí los algoritmos clave para la resolución de las prácticas.
 
-## Variables y métodos de clase: La palabra clave `static`
+## Variables y métodos *de clase*: La palabra clave `static`
 
 La palabra clave *static* declara atributos (variables) y métodos asociados con la clase en lugar de
 asociados a cada una de las instancias de la clase.
@@ -74,9 +74,6 @@ Cliente[] cliArray = {new Cliente(), new Cliente(), new Cliente()};
 String[] items = { "item1", "item2", "item3", "item4"};
 ```
 
-
-## Sintaxis de clases
-
 ## Programa principal
 ```java
 public class MiPrimeraAplicacion{
@@ -86,10 +83,12 @@ public class MiPrimeraAplicacion{
   }
 }
 ```
+## Sintaxis de clases
 
 ### Clase
 Sintaxis:
 ```java
+package tp1.ej2;    // Package al que pertenece el archivo de la clase.
 @Override// Asegurarse que no haya problemas (se verá más adelante)
 public class NombreDeClase {
   /*Declaración del **estad** del objeto*/
@@ -97,6 +96,7 @@ public class NombreDeClase {
   /*Declaración de métodos que implementan acciones*/
 }
 ```
+Cada clase debe alojarse en un archivo propio.
 
 ### Declaración del estado interno
 ```java
@@ -128,6 +128,10 @@ Ejemplo:
   System.out.println("a"+ a);
 
 ```
+
+### Leer de teclado
+* `System.in`
+* `Scanner`
 
 ### Bucle for
 ```java
