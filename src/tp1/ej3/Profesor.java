@@ -1,11 +1,11 @@
 package tp1.ej3;
 
-public class Estudiante {
+public class Profesor {
   private String nombre;
   private String apellido;
-  private String comision;
   private String email;
-  private String direccion;
+  private String catedra;
+  private String facultad;
 
   // Getters
   public String getNombre() {
@@ -16,16 +16,16 @@ public class Estudiante {
     return apellido;
   }
 
-  public String getComision() {
-    return comision;
+  public String getCatedra() {
+    return catedra;
   }
 
   public String getEmail() {
     return email;
   }
 
-  public String getDireccion() {
-    return direccion;
+  public String getFacultad() {
+    return facultad;
   }
   // End getters
 
@@ -38,16 +38,16 @@ public class Estudiante {
     return apellido;
   }
 
-  public String setComision() {
-    return comision;
+  public String setCatedra() {
+    return catedra;
   }
 
   public String setEmail() {
     return email;
   }
 
-  public String setDireccion() {
-    return direccion;
+  public String setFacultad() {
+    return facultad;
   }
   // End setters
 }
