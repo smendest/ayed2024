@@ -30,24 +30,35 @@ public class Profesor {
   // End getters
 
   // Setters
-  public String setNombre() {
-    return nombre;
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
   }
 
-  public String setApellido() {
-    return apellido;
+  public void setApellido(String apellido) {
+    this.apellido = apellido;
   }
 
-  public String setCatedra() {
-    return catedra;
+  public void setCatedra(String catedra) {
+    this.catedra = catedra;
   }
 
-  public String setEmail() {
-    return email;
+  public void setEmail(String email) {
+    this.email = email;
   }
 
-  public String setFacultad() {
-    return facultad;
+  public void setFacultad(String facultad) {
+    this.facultad = facultad;
   }
   // End setters
+
+  public String tusDatos() {
+    String nombre = getNombre();
+    String apellido = getApellido();
+    String catedra = getCatedra();
+    String email = getEmail();
+    String facultad = getFacultad();
+
+    return nombre + " " + apellido + " " + catedra + " " + email + " " + facultad;
+
+  }
 }

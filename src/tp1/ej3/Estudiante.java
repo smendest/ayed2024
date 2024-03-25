@@ -30,24 +30,35 @@ public class Estudiante {
   // End getters
 
   // Setters
-  public String setNombre() {
-    return nombre;
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
   }
 
-  public String setApellido() {
-    return apellido;
+  public void setApellido(String apellido) {
+    this.apellido = apellido;
   }
 
-  public String setComision() {
-    return comision;
+  public void setComision(String comision) {
+    this.comision = comision;
   }
 
-  public String setEmail() {
-    return email;
+  public void setEmail(String email) {
+    this.email = email;
   }
 
-  public String setDireccion() {
-    return direccion;
+  public void setDireccion(String direccion) {
+    this.direccion = direccion;
   }
   // End setters
+
+  public String tusDatos() {
+    String nombre = getNombre();
+    String apellido = getApellido();
+    String comision = getComision();
+    String email = getEmail();
+    String direccion = getDireccion();
+
+    return nombre + " " + apellido + " " + comision + " " + email + " " + direccion;
+
+  }
 }
