@@ -49,7 +49,7 @@ public class Ejercicio1 {
 
 ```
 
-## Arrays
+## Arrays - Arreglos
 Declaración e inicialización.
 
 ### Varios pasos
@@ -72,6 +72,20 @@ for (int i=0;i<4;i++){
 int[] intArray = {6, 3, 2, 4, 9};
 Cliente[] cliArray = {new Cliente(), new Cliente(), new Cliente()};
 String[] items = { "item1", "item2", "item3", "item4"};
+```
+
+## Arreglo de objetos
+
+Ejemplo:
+```java
+// Creamos el arreglo
+Persona[] personas = new Persona[5];
+// Agregar personas al arreglo
+personas[0] = new Persona("Juan", 25);
+personas[1] = new Persona("María", 30);
+personas[2] = new Persona("Pedro", 40);
+personas[3] = new Persona("Luisa", 35);
+personas[4] = new Persona("Ana", 20);
 ```
 
 ## Programa principal
@@ -130,8 +144,22 @@ Ejemplo:
 ```
 
 ### Leer de teclado
+* `java.util.Scanner`
+    - A simple text scanner which can parse primitive types and strings using regular expressions.
+    - A Scanner breaks its input into tokens using a delimiter pattern, which by default matches whitespace. The resulting tokens may then be converted into values of different types using the various next methods.
 * `System.in`
-* `Scanner`
+    - es un objeto de flujo de entrada estándar que está asociado con la entrada estándar del sistema.
+    - es la fuente de entrada para el objeto Scanner.
+
+    
+```java
+import java.util.Scanner;
+...
+Scanner consola = new Scanner(System.in);   // Create a Scanner object
+int num = consola.nextInt();                // Save the value as an Integer
+
+```
+
 
 ### Bucle for
 ```java
